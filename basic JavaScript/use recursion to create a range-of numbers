@@ -1,0 +1,10 @@
+function rangeOfNumbers(startNum, endNum) {
+  // base case
+  if(startNum == endNum){
+    return [startNum || endNum];
+  } else{
+      let rangeArray = rangeOfNumbers(startNum, endNum-1);
+      rangeArray.push(endNum);
+      return rangeArray;
+  }
+}; console.log(rangeOfNumbers(5,9));

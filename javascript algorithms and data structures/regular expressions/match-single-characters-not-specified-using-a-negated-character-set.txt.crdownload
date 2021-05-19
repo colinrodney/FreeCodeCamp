@@ -1,0 +1,11 @@
+Match Single Characters Not Specified
+
+NOTES:
+
+- up to this point, we have created a set of characters that you want to match, but we can also create a set of characters that you don't want to match. These types of character sets are called negated character sets.
+
+- How to create a negated character set?
+
+	- place a caret character (^) after the opening bracket AND before the characters you do not want to match, For example:
+
+	/[^aeiou]/ig - this pattern will match all char

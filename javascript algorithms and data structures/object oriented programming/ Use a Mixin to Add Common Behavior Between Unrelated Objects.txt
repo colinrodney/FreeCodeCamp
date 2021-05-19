@@ -1,0 +1,92 @@
+Use a Mixin to Add Common Behavior Between Unrelated Objects
+
+Skills/ Concepts introduced
+- mixins
+
+
+> Behavior is shared through inheritance. There are some cases when 
+  inheritance is not the best solution.
+
+    - inheritance does not work well for unrelated objects such as 'Bird' 
+    and 'Airplane'. They both can fly, but a Bird is not a type of Airplane,
+    and an Airplane is not a type of Bird.
+
+    - For unrelated objects it is better to use mixins.
+
+    > What is a mixin?
+      - A mixin allows other objects to use a collection of functions. (??? Research mixins further),
+      for example:
+
+        let flyMixin = function(obj){
+          obj.fly = function(){
+            console.log("Flying, wooosh!");
+          }
+        };
+
+        - the flyMixin takes some object and gives that object the 'fly' method.
+
+        let bird = {
+          name: "Donald",
+          numLegs: 2,
+        };
+
+        let plane = {
+          model: "777",
+          numPassengers: 524,
+        }
+
+        flyMixin(bird);
+        flyMixin(plane);
+
+        - Here bird and plane are passed into the flyMixin function,
+        which then assigns the fly function to each object passed in.
+        Now both bird and plane have access to the 'fly' method and as 
+        such, both bird and plane can call the fly method:
+
+          bird.fly();
+          plane.fly();
+
+        The console would display the string "Flying, wooosh!" twice, that
+        is one time for each of the method calls.
+
+        Note how the mixin allows for the same fly method to be reused by
+        the unrelated objects bird and plane.
+
+
+
+CODE CHALLENGE:
+
+Creat a mixin in named dlideMixin that defines a method named
+glide. The use the glideMixin to give both bird and boat the ability
+to glide.
+
+Todo's:
+  1. Create mixin name glideMixin
+    a. Define a method named glide within the mixin
+    b. Use the glideMixin to to give bird and boat access to the 
+    glide method.
+
+CHALLENGE SOLUTION CODE:
+
+let bird ={
+  name: "Donald",
+  numLegs: 2,
+};
+
+let boat = {
+  name: "Warrior",
+  type: "race-boat"
+};
+
+// Change code below this line...
+
+let glideMixin = function(obj){
+  obj.glide = function(){
+    return "gliding",
+  }
+} 
+
+glideMixin(bird);
+glideMixin(boat);
+
+

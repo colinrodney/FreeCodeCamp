@@ -1,0 +1,21 @@
+Intro to Applied Accessibility Challenges
+
+1. Accessibiliy
+  -Generally means having web content and a user interface
+  that can be understiid, navigated, and interacted with by a broad audience.
+
+  - MAIN IDEA: Websites should be open and accessible to everyone!
+  Keeping the needs of various users in mind during development gies a long way towards creating an open web.
+
+  - Includes people w/ visual, auditory, mobility, or cognitive disabilities.
+
+  - Some users may rely on assistive technology (screen readers, voice recognition software etc...) while others may be able to navigate through a site using only a keyboard.
+
+2. Learning Objectives/ Concepts:
+  1. Have well organized code that uses the apprpriate markup
+  2. Ensure text alternatives exist for non-text and visual content
+  3. Creat an easily-navigated page that is keyboard friendly
+
+  Resources/ References:
+  W3 Web Content Accessibility Guidelines (WCAG) Overview
+  https://www.w3.org/WAI/standards-guidelines/wcag/

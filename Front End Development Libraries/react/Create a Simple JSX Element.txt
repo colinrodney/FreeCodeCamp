@@ -1,0 +1,49 @@
+Create a Simple JSX Element
+
+> React
+  - Open Source view library created and maintained by Facebook.
+  - Used to render the User Interface (UI) of modern web applications
+  - Uses a syntax extension of JavaScript called JSX which allows you
+    to write HTML directly within JavaScript which has several benefits:
+
+      - It allows you to use the full programming power of JavaScript
+        within HTML.
+
+      - Helps to keep your code readable and maintanable.
+
+    - in general, JSX  is similar to the HTML you've already learned,
+      but there are a few key differences that will be covered througout
+      these challenges.
+
+        - For example, because JSX is a syntactic extension of JavaScript,
+          you can actually write JavaScript directly into JSX. To write
+          JavaScript directly into JSX, simply inclide the code that needs
+          to be treated as JavaScript inside curly braces {'This is treated 
+          as JavaScript code' }. Kepp this in mind, since this syntax will 
+          be used in several future code challenges.
+
+        - Because JSX is not valid JavaScript, JSX code has to be complied
+        into JavaScript. 
+          - A popular transpile - Babel is a popular tool for this process.
+            - NOTE since Babel is already added behind the scenes for these
+              challenges - if you write syntactically invalid JSX, the first
+              test in these challenges will fail.
+
+        - NOTE: Under the hood the challenges are calling:
+          ReactDOM.render(JSX, document.getElementById('root')).
+            - This function call is what places your JSx into React's own
+            lightweight representation of the Document Object Model (DOM).
+            -React then uses snapshots of its own DOM to optimize updating
+            only specific parts of the actual DOM.
+
+
+
+CODE CHALLENGE:
+
+Problem:
+The current code uses JSX to assign a div element to the constant JSX. Replace the div with an h1 element and add the text Hello JSX! inside it.
+
+
+Solution Code:
+const JSX = <h1>Hello JSX!</h1>;
+

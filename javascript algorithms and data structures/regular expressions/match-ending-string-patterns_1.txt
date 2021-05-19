@@ -1,0 +1,30 @@
+Match Ending String Patterns
+
+NOTES:
+- @ the last challenge we learned how to use the caret character(^) to search for patterns at the beginning of strings. 
+Matching Patterns at the End Of a String 
+
+
+
+- There is also a way to search for patterns at the end of strings. We can search the end of strings using the dollar sign (anchor) character ($) at the end of the regex. For example:
+
+	let theEnding = "This is a never ending story";
+	let storyRegex= /story$/;
+	storyRegex.test(theEnding);
+
+	let noEnding = "Sometimes a story will have to end";
+	storyRegex.test(noEnding);
+
+	- the first test call will return true, while the second test call would return false.
+
+NOTE:
+Review differences between .test() and .match() methods!!
+
+
+
+
+CHALLENGE SOLUTION CODE:
+
+let caboose = "The last car on a train is the caboose";
+let lastRegex = /caboose$/;
+let result = lastRegex.test(caboose);

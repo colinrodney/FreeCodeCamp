@@ -1,0 +1,17 @@
+CSS Grid: Create Flexible Layouts Using auto-fit
+
+> auto-fit 
+  - works almost identically to auto-fill except for one difference
+
+> auto-fit vs auto-fill
+  - auto-fill
+      - when the container size is greater than the size of all
+      of the items combined, auto-fill will keep inserting empty rows or columns and 
+      will push your items to the side.
+
+  -auto-fit:
+      - when the container size is greater than the size of all of the items combined,
+      auto-fit will collapse empty rows or columns and will stretch the items to fit 
+      the size of the container.
+      NOTE: if the container cannot fit all of the items on one row, it will move
+      them down to a new one.

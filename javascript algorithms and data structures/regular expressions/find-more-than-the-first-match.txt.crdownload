@@ -1,0 +1,7 @@
+Find More than the First Match
+
+NOTES:
+- up to this point we have only been able to search or extract a pattern once:
+
+	let testStr = "Repeat, Repeat, Repeat";
+	le

@@ -1,0 +1,20 @@
+Add a Text Alternative to Images for Visually Impaired Accessibility:
+
+alt attribute:
+  - used w/ the img tag
+  - Alt text
+    -describes the content of the image and provides a text-alternative for it in the event the images developmentnot load or if the image cannot be seen by the user.
+
+
+    - also used by search engines to understand what an image contains so it can be included in search results.
+
+    Ex:
+    <img src="importantLogo.jpg" alt="Company logo"
+
+    - Visually impaired users must rely on screen readers to convert web content to an audio interface. They wont get the infomration if it's only ptresented visually. 
+
+    - For images, screen readers can access the alt attribute andread its contents to deliver the information.
+
+    - Provides screen readers a brief description of the image
+
+    - the alt attribute should ALWAYS be included on the image tag per HTML5 specifications.

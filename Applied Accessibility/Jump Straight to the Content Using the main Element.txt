@@ -1,0 +1,23 @@
+Applied Accessibility: Jump Straight to the Content Using the main Element:
+
+
+> HTML5 introduced a number of new elements that give developers more options while also incorporating accessibility features. Thes tags include:
+  - main
+    - Only 1 per webpage
+    - Used to wrap the main content of the page. It is meant to surround information related to the central topic of the page.
+    - Should not include items that repeat across pages (navigation links, banners etc...)
+    - Has an embedded landmark feature used by assistive technology that will allow a user to quickly navigate to the main content of the page.
+    - If yoir've ever seen a :Jump to Main Content" link at the top of a page, using a main tage automatically gives assistive devices that functionality.
+    
+  - header
+  - footer
+  - nav
+  - article
+  - section
+
+  among others.
+
+> By default a borwser will render these elements similarly to the "div" element, but proper use of semantic HTML elements gives additional meaning to your markup. The tag name by itself can indicate the type of information it contains, which adds semantic meaning to that content.
+
+> Assistive technologies can access this infomration to provide better page summary or navigation options to their users.
+

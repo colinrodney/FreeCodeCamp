@@ -1,0 +1,11 @@
+
+
+Header Tag
+  - HTML5 element used to add semantic meaning + improve Accessibility
+  - Used to wrap introductory information or navigation links for its parent tag.
+  - Works well for content that is repeated at the top on multiple pages.
+
+  -Shares the embedded landmark feature we saw w/ <main>, which allows assistive technologies to quickly navigate to that content.
+
+  NOTE: header element is to be used inside the body tag of the HTML document.
+  This is different thatn the head element  that contains the page title, metadata etc...

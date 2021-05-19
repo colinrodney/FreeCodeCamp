@@ -1,0 +1,6 @@
+USING .MATCH() METHOD TO EXTRACT MATCHES
+
+NOTES:
+- Up to this point we've only been checking to see whether or not a pattern exists within a string.
+
+- We can also extract the 

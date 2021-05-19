@@ -1,0 +1,5 @@
+1. Using the .test() method to chk a string for a regex pattern
+
+
+Example code:
+let myStrin

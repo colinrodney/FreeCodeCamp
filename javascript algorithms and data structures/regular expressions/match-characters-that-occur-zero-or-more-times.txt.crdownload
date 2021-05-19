@@ -1,0 +1,7 @@
+FIND CHARACTERS WITH LAZY MATCHING
+
+NOTES:
+
+- By default, all regular expressions are greedy
+
+- In regular expressions, a greedy match finds the longest part of a

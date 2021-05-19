@@ -1,0 +1,79 @@
+function frankenSplice(arr1, arr2, n) {
+  arr2 = arr2.slice(0); 
+  arr2.splice(n, 0, ...arr1); //spread operator in use
+  return arr2;
+}
+
+frankenSplice([1, 2, 3], [4, 5, 6], 1);
+
+  /*
+
+  INTRO:
+  My name is Colin Rodney and this is my first blog post as a self-taught (and always will be in training programmer...) (Don't bust me up too badly!). 
+
+  In this post, we will be discussing the "Slice and Splice" Coding Challenge as part of the freeCodeCamp Basic Algorithm Scripting section of the JavaScript Algorithms and Data Structures unit.
+
+
+  Lets begin by examining the problem as stated on FCC.org:
+
+  You are given two arrays and index.
+
+  Copy each element of the first array into the second array, in order.
+
+  Begin inserting elements at index n of the second array.
+
+  Return the resulting array. The input arrays should remain
+  the same after the function runs.
+
+
+  Lets Get Busy!
+
+  CODE EXPLAINED
+
+  1) arr2 = arr2.slice(0):
+
+   Per problem specifications, the input arrays should remain the same after the function runs.
+   As to not change the original state of arr2, we will grab all of arr2 using the .slice() method and assign  it to arr2. The .slice() method (point to MDN or w3 schools links) returns a shallow copy of the specified portion of an array into a new array object. (in other words we have effectively preserved the original state of arr2 by assgining/ overwriting the pre-exisiting value with a copy of itself.)
+
+   
+    We will begin inserting elements at index n (1) of the second array using the .slice() method.
+    The syntax as per MDN is as follows:
+    arrName.splice(start, [deleteCount, [item1, [item2]]]).
+
+    EXPLAIN THE SYNTAX...
+
+    "start" represents the index position at which changes will take place within the array.
+
+    "deleteCount"[optional], represents the number of elements in the array to be removed starting at "start". This can be a bit tricky because even though it is listed as an optional parameter, MDN goes further to explain that if "deleteCount" is omitted, or if the value of "deleteCount" is greater than or equal to the number of elements remaining in the array, all of the elements beginning at start and going through the end of the array will be deleted. (Spoiler Alert: if you leave the deleteCount value unsepecified the tests will fail!).
+
+    "item1, item2"[optional]
+  represents the elements to be added to the array on which the .splice() method was called beginning at the specified value of "start". 
+
+  For this challenge it is important to specifythe required "index" ,the "deleteCount", and " the "item" to be "spliced" into the array.
+
+  2) arr2.splice(n, 0, ...arr1);
+
+    Since we have assigned arr2 a shallow copy of itself, we can now call the .splice() method on the arr2 variable. Calling the .splice() method directly on arr2 before assigining a copy of the array to itself would have caused the original (input) array to be mutated and the tests would fail. Within the method we will pass as arguments, the index (required), the deleteCount as 0 so that no elements are deleted from the array, and the item to be added to the array, is arr1, however the items from arr1 will need to be unpacked. This can be done using the [...spread] operator (MED reference).
+
+        3) return arr2
+
+    We can now return arr2, all tests are passing and all is right w/ the programming world (at least for now... lol)
+
+    End it here!
+
+
+    Summary:
+      - Brief discussion on how I solved the "Slice and Splice" coding challenge on freecodecamp.com
+
+      - Explain how the .splice()method works
+
+      Thanks for reading and please leave feedback as I am always aspiring to be a better programmer.
+
+
+
+
+     
+
+
+
+  */

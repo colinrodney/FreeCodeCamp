@@ -1,0 +1,14 @@
+Applied Accessibility: Know When Alt text should be left blank:
+
+- Use of the alt attribute on images is mandatory per HTML5 specifications.
+
+In instances when an images is already explained w/ text content, or the images doN't add any meaning to the page (ex: images grouped w/ a text caption or images that are for decoration)
+the alt attribute is still required, but it can be set to an emplty string.
+
+-Background images usually fall into the "decorative image" category and are usually applied via CSS rules and therefore are not a part of the markup processed by screen readers.
+
+NOTE: For images w/ captions it is good to still use alt text as it helps search engines catalog the content of the image.
+
+-MAIN IDEA:
+  alt text - helps search engines catalog image content (SEO boost?)
+  all images require use of alt attribute and alt text except for "decorative" images such as background images which are usually applied via CSS and not processed by screen readers.

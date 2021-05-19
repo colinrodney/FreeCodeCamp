@@ -1,0 +1,18 @@
+Basic JavaScript: Use the parseInt Function with a Radix
+
+> parseInt() function parses a string and returns an integer
+and can also accept a second argument for the radix, which specifies
+the base of the number in the string.
+
+> The radix can be any integer between 2 and 36.
+> The purpose of the radix is to CONVERT A
+BINARY NUMBER TO AN INTEGER AND RETURN IT.
+
+Example:
+var a = parseInt("11", 2);
+
+> radix variable says that "11" is in the binary system, otherbase 2.
+The above example converts the string "11" to an integer 3.
+
+RESOURCES:
+https://www.w3schools.com/jsref/jsref_parseint.asp#:~:text=The%20radix%20parameter%20is%20used,number%20to%20a%20decimal%20number.&text=If%20the%20string%20begins%20with%20any%20other,the%20radix%20is%2010%20(decimal)

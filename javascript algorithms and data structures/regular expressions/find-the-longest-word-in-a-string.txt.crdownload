@@ -1,0 +1,13 @@
+Solution:
+
+function findLongestWordLength(str) {
+  // split string into array of substrings
+  var subStrArr = str.split(" ");
+  // set largestSubStrValue to zero as a tracker
+  var largestSubStrValue = 0;
+  for(var i = 0; i < subStrArr.length; i++){
+    if (largestSubStrValue < subStrArr[i].length){
+      largestSubStrValue = subStrArr[i].length
+  }
+  }
+  return 

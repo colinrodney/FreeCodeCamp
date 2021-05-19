@@ -1,0 +1,41 @@
+****Basic JavaScript: Use the Conditional (Ternary) Operator
+
+Resources:
+https://www.youtube.com/watch?v=s4sB1hm73tw
+
+> The conditional/ "question mark" operator
+  - also called the ternary operator
+  - can be used as a one line if-else expression (shortcut)
+  -Has three operands:
+    1. The condition
+    2. The "if true" value (executes if condition evaluates to true)
+    3. The "if false" value (executes if condition evaluates to false)
+
+  - The condition should evaluate to a boolean value true or false.
+
+  SYNTAX:
+    - condition ? expression-if-true : expression-if-false;
+    -read as: " condition "the question is(?)" "expression true?" or(:) " expression false"
+
+
+    Solution code:
+    function checkEqual(a, b) {
+    return a == b? "Equal":"Not Equal";
+    }
+    checkEqual(1, 2);
+
+
+    ****Basic JavaScript: Use Multiple Conditional (Ternary) Operators
+    Conditional operators can be chained together to check for multiple conditions.
+
+    Ex:
+    function findGreatrOrEqual(a,b){
+      return (a == b) ? "Equal":
+      (a > b) ? "a greater than b":
+      "b greater than a";
+
+      In using multiple ternary operators it is considered best practice to format multiple conditional operators
+      such that each condition is on its own seperate line as shown above. Using multiple ternary operators without 
+      proper indentation will make your code hard to read.
+    }
+

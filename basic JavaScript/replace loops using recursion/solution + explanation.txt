@@ -1,0 +1,42 @@
+Goal:
+Write a recursive function that 
+returns the sum of the first n elements of an array.
+
+Example:
+sum([1], 0) should equal 0.
+sum([2, 3, 4, 5], 3) should equal 9.
+
+function sum(arr, n) {
+  // Only change code below this line
+  // base case
+  if(n <= 0){
+    return 0;
+  } else{
+    let newSum = arr[n-1];
+    return newSum += sum(arr, n-1);
+  }
+
+  // Only change code above this line
+}
+
+
+
+How do we get there?
+possibility 1:
+
+0, 1, 2 = 3 elements
+When considering index positions we start counting at 0 andn ow 1.
+
+
+1. start at index position n of the array
+and subtract 1 from n:
+arr[n-1]
+We subtract 1 from n since we started counting the index positions from 0 and not 1.
+
+2. Store the value of arr[n-1] in some variable. We'll call our variable "newSum".
+
+3.Take the value of that variable and add it to arr[n-1]. 
+4. Return to function
+
+***Detail these notes better later on***
+

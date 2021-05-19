@@ -1,0 +1,7 @@
+Handle a Rejected Promise w/ catch:
+
+NOTES:
+
+> catch is the method used when your promise has been rejected/ not fulfilled.
+
+> Executed immediately after a promise's re

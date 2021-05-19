@@ -1,0 +1,31 @@
+Applied Accessibility: Use Headings to Show Hierarchial Relationships of Content:
+
+MAIN IDEA:
+  - Use header tags to show the logical flow and relationship of content on the webpage.
+  - Don't use header tags soley for their size as this will confuse screen reader users who are looking to get a summary of the content on the webpage. (May also hurt SEO rankings?)
+  For example a webpage w/ an h2 followed by several subsections w/ h4 tags would confuse a screen reader user.
+  
+  Semantic Meaning
+    - Idea that the tag used to wrap around content should indicate the type of information it contains.
+
+1. Headings
+  - h1-h6
+  - workhorse tags that help provide structure and labeling to 
+  your content.
+
+  - Each webpage should have only one (and only one) h1 element as this represents the main subject of your content. This and the other headings are used by search engines to understand the topic of the webpage.
+
+  - Screen readers can be set to read only the headings on a page so the user can get a summary of the pages content. It is important for the heading tags in your markup to have semantic meaning and relate to each other!
+
+  -headings should not be picked simply for their size values! 
+  (Better to use paragraphs and ajust relative sizing via CSS)
+  For example a webpage w/ an h2 followed by several subsections w/ h4 tags would confuse a screen reader user.
+
+  - heading tags on any webpage need to flow in logical order to show the hierarchial relationships of the pages content.
+
+  -headings w/ equal (or high) rank start new implied sections, and headings w/ lower rank start subsections of the previous one.
+
+
+
+
+

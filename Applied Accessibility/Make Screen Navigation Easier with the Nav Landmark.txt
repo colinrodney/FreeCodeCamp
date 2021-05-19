@@ -1,0 +1,7 @@
+Applied Accessibility: Make Screen Reader Navigation Easier with the nav Landmark
+
+Nav Element
+  - Another HTML 5 item w/ the embedded landmark feature for easy screen reader navigation
+  - This tag is used to wrap around the main navigation links in your page.
+
+  -Repeated site links at the bottom of the page (in footer) are not required to be makedup using a nav tag. Using a footer tag is sUfficient for these links.

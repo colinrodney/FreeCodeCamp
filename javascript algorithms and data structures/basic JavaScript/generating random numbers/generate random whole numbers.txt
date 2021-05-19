@@ -1,0 +1,51 @@
+Problem:
+Generate a random whole number between 0 and 9 using JavaScript.
+
+
+
+
+Points to remeber: 
+Math.random() can never quite return a 1. It will return a number between 0 and 0.9
+
+TODO's
+1. Generate a random decimal using the Math.random() function.
+
+2. Multiply the random generated number by 10 to convert it to a whole number and store the result in a variable called roundedNumber.
+
+3. Return the variable roundedNumber as a result.
+
+
+
+
+
+Strategy:
+Research
+Execute:
+
+1.Generate random decimal and multiply by 10 to convert.
+Code:
+let randomDecimal = Math.random()*10;
+
+2. 
+Use another function Math.floor() to round the variable randomNumber DOWN to its nearest whole number and return as result
+Code:
+return Math.floor(randomNumber);
+
+
+
+SOLUTION CODE (Passes all tests):
+function randomWholeNum() {
+
+  // Only change code below this line
+  let randomDecimal = Math.random()*10;
+  return (Math.floor(randomDecimal));
+}     
+
+NOTE: There is more than one way to solve this problem!!
+
+ASK question about this problem and its solution on the forum - Make sure to go back and test your alternative solutions to make sure they produce correct results BEFORE posting.
+
+Logical guess: the tests are designed to want the code to look / behave a certain way to pass...
+
+
+

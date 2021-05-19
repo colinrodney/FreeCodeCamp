@@ -1,0 +1,29 @@
+Matching Characters that Occur Zero or More Times within a string
+
+NOTES:
+- @ the last challenge we used the '+' sign to look for characters that occur one or more times.  We also have an option that will match characters that occur zero or more times.
+
+The character used to match characters that occur zero or more times is the asterisk/ star * character. For Example:
+
+
+	let soccerWord = "gooooooal!"
+	let gPhrase = "gut feeling";
+	let oPhrase = "over the moon";
+	let goRegex = /go*/;
+
+
+	soccerWord.match(goRegex) // returns ["gooooooal"]
+
+	gPhrase.match(goRegex) // returns ["g"]
+
+	oPhrase.match(goRegex) // returns null. This is because neither of the characters in the regular expression /go*/ appear within thestring.
+
+	
+
+
+
+CHALLENGE SOLUTION CODE
+let chewieRegex = /Aa*/;
+
+let result = chewieQuote.match(chewieRegex);
+//returns ["Aaaaaaaaaaa"]

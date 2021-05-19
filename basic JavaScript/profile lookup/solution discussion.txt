@@ -1,0 +1,123 @@
+Basic JavaScript: Profile Lookup
+
+Burning Questions:
+What is the difference between dot notation and bracket notation?
+All of the code was setup properly but when using dot notation all tests failed. When used bracket notation all tests passed??
+
+Problem/ Goal:
+Function should chk if "name" is an actual contact's first name and the given property (prop) is a property of that contact
+
+If both are true, then return the "value" of that property.
+
+If name does not correspond to any contacts then return "no such contact".
+
+If prop does not correspond to any valid properties of a contact found to match name then return "no such property".
+***********************************
+
+Restate Problem:
+Function will chk to see if value of "name" is indeed the first name of one of the contacts in the array of objects.
+
+The function will also chk to see if the passed property (prop) is attached to the passed contact name.
+
+if the name matches one of the names in the objects array and the property matches a property of that contact (name):
+Return the VALUE of that property.
+
+If the name does not match one of the names in the objects array:
+Return: "no such contact"
+
+If the passed property is not attached to any contact in the objects array:
+Return: "no such property"
+
+
+Discussion:
+After reading, reading and re-reading , and seeking help- I approached this problem by working backwards:
+
+State Problem: State Original Problem
+
+Restate Problem:
+For this problem the function needs chk if name is an actual contact's name (is the name found in the list at all? And if it is, is the property - represented by the variable prop associated w/ the matched name?
+
+If the passed name (represented by variable name) is matched within the object array AND the passed property represented by the variable prop is associated w/ that name: We are to return the VALUE of the passed property.
+
+If the passed proerty does not correspont to any contaccts within the object array we are to return "No such property"
+
+What is the name is not at all in the object array?
+return "No such contact".
+
+
+MAIN IDEA OF THIS PROBLEM: 
+Is that we will return a result if and only if certain specific conditions exist!
+If the name is found within the object array AND the passed property is associated w/ that specific name: > we return "x" result.
+
+If the name is found within the object array but the passed property is NOT at all associated to any of the names within the object array: > we return "y" result
+
+If the name is not at all found within the object array: we return "z" result
+
+
+Design + Strategy
+Use a for loop to iterate the length of the objects array!
+
+After setting up the loop we then begin asking logical questions about the conditions to setup our decision structure (if/then).
+
+
+
+Discussion:
+I prefer write my code very explicitly such that it reads almost identically to the problem. With that being said lets start w/ the "catch all" condition
+
+Scenario 1.
+ What if the name is not in the object array at all?
+ If this is the case we can immediately return "No such contact".
+(If the name is not in the object array at all it cannot be associated w/ anything in the object list)
+
+Scenario 2:
+We've addressed the "catch all" condition
+lets begin working on the compound conditions
+We are to return the value of the property if and only if both the name is matched to the object array AND the passed property is associated w/ that specific name:
+
+>Discuss solution code here!<
+
+
+Scenario 3:
+Since I prefer to code as explicitly as possible I'm going to code the remainder of our solution as another compound conditional:
+
+>Further discuss solution code here!<
+
+
+TODOs:
+1. 
+(Name not found in object array at all)
+Chk if the name passed in matches any first name in the objects array. If not - return "no such contact"
+
+2.
+(Name matched +  passed property matched to name) 
+Chk if both the name passed in is found within the object array AND chk if that name is associated w/ the property which was passed in.
+> If the matched name is associated w/ the property that was passed in:
+- return the value of the property passed into the function
+
+3.
+(Name matched + passed property not matched to name)
+> If the name is matched but it is not associated w/ the property passed into the function:
+- return "No such property"
+
+
+MASTER SOLUTION CODE:
+function lookUpProfile(name, prop){
+// Only change code below this line
+for(let i = 0; i < contacts.length; i++){
+    // contact name matched AND contact name is associated w/ property passed
+    if(contacts[i].firstName == name && contacts[i].hasOwnProperty(prop)){
+        return contacts[i][prop];
+    // contact name matched And contact name is not assoc w/ property passed
+    }else if(contacts[i].firstName == name && !contacts[i].hasOwnProperty(prop)){
+        return "No such property";
+    }
+}
+return "No such contact";
+        
+// Only change code above this line
+}
+
+lookUpProfile("Akira", "likes")
+
+
+

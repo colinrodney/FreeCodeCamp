@@ -1,0 +1,35 @@
+var myList = [];
+// first elements in each sub-array should be a string
+var itemsSubList = [
+    "Apples",
+    "cereal",
+    "hodge podge",
+    "dawn soap",
+    "our house",
+];
+
+// second elements in each sub-array should all be numbers
+var quantities = [
+    2,
+    1,
+    2,
+    0,
+    1
+];
+
+// at least 5 items should be in the list
+
+// loop over items to add to list
+let i = 0;
+let j = 0;
+
+while (i < itemsSubList.length && j < quantities.length){
+    myList.push([itemsSubList[i], quantities[j]])
+    i++
+    j++
+};
+
+console.log(myList);
+
+
+

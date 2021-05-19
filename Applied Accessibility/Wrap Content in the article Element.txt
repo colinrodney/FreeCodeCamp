@@ -1,0 +1,30 @@
+Applied Accessibility: Wrap Content in the article Element:
+
+Article:
+  > Anotoher one of the new HTML5 elements that adds semantic
+  meaning to your markup.
+
+  > Used as a sectioning element
+    - Used to wrap independent, self-container content.
+    - Works we;; w/ blog entries, forum posts, or news articles.
+
+
+-Determining whether content cant stand alone is usuallya judgement call, but there aee some questions that can be asked for testing:
+1. If all srrounding content were removed, would that content still make sense?
+2. Would the content hold up if it were text in an RSS feed?
+
+REMEMBER: Assistive technology users rely on organized, semantically meaningful markup to better understand your work.
+
+NOTE: re section and div:
+  > section element is also new w/ HTML5 and has a slightly different semantic meaning than article.
+
+    - An article is for standalone (independent) content.
+    - A section is for grouping (thematically related) content.'
+    - The two can be used within each other as needed. For example, if a book is the article, then each chapter in the book would be a section.
+    -When there is no relationship between groups of content, we use a div.
+
+    See: Guidance below:
+
+    <div> - groups content
+    <section> - groups related content<article> - groups independent, self contained
+    content.

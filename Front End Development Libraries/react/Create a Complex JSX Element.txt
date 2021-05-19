@@ -1,0 +1,81 @@
+Create a Complex JSX Element
+
+>  JSX can represent more complex HTML as well as 
+  simple HTML:
+
+> Nested JSX
+  - IMPORTANT: Nested JSX MUST return a SINGLE ELEMENT.
+      - This single element (parent element) acts as a wrapper
+      to wrap all of the other levels of nested elements.
+
+      - Several JSX element written as siblings without a parent
+      element wrapping them will NOT transpile:
+
+        Consider the following examples:
+
+          VALID JSX:
+
+            <div>
+              <p>Paragraph One</p>
+              <p>Paragraph Two</p>
+              <p>Paragraph Three</p>
+            </div>
+
+          INVALID JSX:
+
+            <p>Paragraph One</p>
+            <p>Paragraph Two</p>
+            <p>Paragraph Three</p>
+
+
+CODE CHALLENGE:
+
+Problem / Goal:
+Define a new constant JSX that renders a div which contains
+the following elements in order:
+
+  - An h1, a paragraph (p), and an unordered list that contains
+    three list items (li). You can include any text you want within
+    each element.
+
+    NOTE: When rendering multiple elements like these in this challenge,
+    you can wrap them all in parentheses, but it is not strictly required.
+
+      - Also notice this challenge uses a div tag to wrap all of the 
+      child elements within a single parent element. If we remove the div tag,
+      the JSX will no longer transpile. Remember this since it will
+      also apply when returning JSX elements in React components.
+
+
+/*
+TODO's
+
+  1. Define a constant JSX that renders a div.
+    - The following elements should be inside the div
+    in this order:
+
+      1. h1 (any text)
+      2. p (any text)
+      3. ul containing three list items (li's)
+*/
+
+
+CODE CHALLENGE SOLUTION:
+
+const JSX = (
+<div>
+  <h1>Hello Everyone!</h1>
+  <p>lorem ipsum</p>
+  <ul>
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+  </ul>
+</div>
+)
+
+// I used the parenthese to wrap eveything for readability - I think
+it looks better...
+
+
+

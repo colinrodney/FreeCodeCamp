@@ -1,0 +1,76 @@
+Use Closure to Protect Properties Within an Object from Being Modified Externally
+
+> In the previous challenge, bird had a public property name.
+
+  - A property name is considered public because it can be accessed
+    and modified outside of bird's definition. For example:
+
+      bird.name = "Duffy" // <-- this is a public property name
+
+  - Any part of your code can easily change the name of bird to
+    any value. Think about this concept in terms of things like
+    passwords and bank accounts being easily changeable by any
+    part of your codebase. This could cause a lot of issues.
+
+    - The easiest way to make a public property private is by creating
+    a variable inside the constructor function.
+
+      - This changes the scope of that variable to be locally scoped 
+      to the constructor function as opposed to the variable being
+      globally scoped. (ie - the variable is only accessible for 
+      modification within the scope of the constructor function 
+      (locally scoped) as opposed to being accessible for modification by any part of 
+       the codebase (globally scoped)).
+
+       - When a variable is locally scoped, it can only be accessed and changed within its
+       context. (ie - When a variable is locally scoped to its constructor function
+       it can only be accessed and changed by methods also located within the constructor
+       function). Consider the following example:
+
+        function Bird(){
+          let hatchedEgg = 10;
+
+          this.getHatchedEggCount = function(){
+            return hatchedEgg;
+          };
+        }
+
+        let ducky = new Bird();
+        ducky.getHatchedEggCount();
+
+        - In the above example, getHatchedEggCount is a privileged method,
+          because it has access to the private variable hatchedEgg. 
+
+          - This is possible because hatchedEgg is declared in the same context
+            as getHatchedEggCount.
+
+          - In JavaScript, a function always has access to the context in which it was
+            created. This is known as closure.
+
+
+CODE CHALLENGE:
+
+Change how weight is declared in the Bird function so it is A
+private variable. Then create a method getWeight that returns 
+the value of weight 15.
+
+  TODO's 
+    - make variable weight a pirvate variable within the Bird
+      constructor function.
+
+    - Create a nethod called getWeight. This method needs to 
+      return a weight value of 15
+
+
+CHALLENGE SOLUTION CODE 1:
+
+function Bird() {
+  let weight = 15;
+
+  this.getWeight = function(){
+    return weight;
+  }
+}
+
+
+

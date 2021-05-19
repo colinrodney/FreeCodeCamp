@@ -1,0 +1,12 @@
+Basic JavaScript: Use Recursion to Create a Countdown
+
+Recursion Terminology:
+
+base case:
+  > Tells the recursive function when it no logner needs to call itself. It is a simple case where the return value is already known.
+
+recursive call:
+  > Executes the original function with different arguments. If the function is written correctly, eventually the base case will be reached.
+
+  Challenge tools:
+  > chk array methods .push() and others (w3 schools?)
