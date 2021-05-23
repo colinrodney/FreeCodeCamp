@@ -1,1 +1,37 @@
 Add comments in JSX
+
+> JSX is a syntax that gets compiled into valid JavaScript.
+
+  - For readability purposes, comments may need to be added to your code. 
+
+  - To add comments into JSX use the following syntax:
+
+    {/* */} to wrap around the comment text. (i.e. place your comment inside the /**/ ,similar to a JavaScript multi-line comment then make sure to enclose the comment using curly braces).
+
+CODE CHALLENGE:
+
+ -Goal: Add a comment somewhere within the provided div element, without modifying the existing h1 or p elements.
+
+ - ORIGINAL CODE:
+  
+  const JSX = (
+    <div>
+      <h1> This is a block of JSX</h1>
+      <p>Here's a subtitle</p>
+    </div>
+  );
+
+  - CHALLENGE SOLUTION CODE:
+
+    cosnt JSX =(
+      <div>
+        <h1>This is a block od JSX</h1>
+
+        {/*This is a comment in JSX, that does not modify any of the elements within this div.*/}
+        
+        <p>Here's a subtitle</p>
+      </div>
+    )
+
+
+

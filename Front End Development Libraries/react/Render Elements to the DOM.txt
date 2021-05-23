@@ -1,0 +1,80 @@
+Render HTML Elements to The DOM
+
+Concepts/ Skills introduced:
+  1. How to render HTML Elements to the DOM
+
+  2. ReactDOM 
+    - React's rendering API.
+    - ReactDOM.render(componentToRender, targetNode)
+
+
+> JSX is a convenient toll that allows you to write readable HTML inside JavaScript. We can render this JSX directly to the HTML DOM using React's rendering API known as ReactDOM.
+
+> ReactDOM 
+  - The rendering API for React.
+  - Allows you to render JSX directly to the HTML DOM using the render method:
+
+    -ReactDOM.render(componentToRender, targetNode) -
+
+     - where the first argument - 'compnentToRender' represents the React element or component that you want to render, and the second argument 'targetNode' represents the DOM (HTML DOM?) node to which you want to render the component (i.e this stands for the HTML DOM node TO which we want to render the React element/ 
+     compnent).
+
+  - ReactDOM.render() MUST be called AFTER the JSX element declarations, the same way that variables MUST be declared before using them.
+
+CODE CHALLENGE:
+  -Goal: Use the ReactDOM.render() method to render the component to the page.
+
+  - You can pass defined/ declared JSX elements in directly as the first argument and use document.getElementById() to select the DOM node to render them to.
+
+  - There is a div with id='challenge-node' available for you to use. Make sure you don't change the JSX constant.
+
+  -ORIGINAL CODE:
+    const JSX =(
+      <div>
+        <h1>Hello World</h1>
+        <p>Lets render this to the DOM</p>
+      </div>
+    );
+    // Change code below this line
+
+> TODO's 
+  1. Figure out which elements/components need to be rendered to the HTML DOM and make sure they are properly declared.
+
+    > The declared JSX element should be rendered to the HTML DOM
+
+  2. Figure out which HTML DOM node we want to render the react element/ component to?
+
+    > We need to render the JSX element/component to the HTML element/ node with the id 'challenge-node'.
+
+  3. Use ReactDOM.render method to render the correct React element/ component to the correct DOM / HTML DOM node.
+
+    > ReactDOM.render(JSX, document.getElementById('challenge-node')) <-- this should render the JSX element to the HTML element w/ id 'challenge-node'.
+
+
+CHALLENGE SOLUTION CODE + DISCUSSION:
+
+const JSX = (
+  <div>
+    <h1>Hello World</h1>
+    <p>Lets render this to the DOM</p>
+  </div>
+);
+
+ReactDOM.render(JSX,document.getElementById("challenge-node"))
+ <-- this should render the JSX element to the HTML element w/ id 'challenge-node'.
+
+The Breakdown:
+....
+
+
+
+Burning Questions:
+
+1.
+Is an element and a component the same thing in React?
+
+2.
+When rendering elements to the DOM are we referring specifically to the HTML DOM?
+
+3.
+Take a look at React and its documentation in more detail!
