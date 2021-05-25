@@ -1,0 +1,43 @@
+bLearn about Self-Closing JSX Tags
+
+> Self-Closing Tags
+  - We have seen how JSX differes from HTML with the use of 'className' vs. 'class' for defining class attributes on HTML elements.
+
+  - Another important difference in which JSX is different from HTML is in the idea of the self-closing tag.
+
+  - In HTML almost all tags have both an opening and a closing tag:
+
+    <div></div>; 
+    
+    - the closing tag ALWAYS has a forward slash before the tag name being closed.
+
+    - IN HTML there are special instances called "self-closing tags", or tags that do not require both an opening and closing tag before another tag can start, for example:
+
+      - the line-break tag can be writted either as <br> or as <br />. It should NEVER be written as <br></br> as this tag does not contain any content.
+
+    - In JSX, ANY element can be written with a self-closing tag AND every element must be closed. 
+
+      - The line-break tag, for example, must always be written as <br /> in order to be considere valid JSX that is able to be transpiled.
+
+      - A <div> can be written as either, <div /> (A div that cannot contain any content), or a <div></div> (a div that does, or is able to contain content).
+
+      - These syntax differences will becomde useful when rendering React components.
+
+CODE CHALLENGE:
+  - Goal:
+    Fix the errors in the code editor so that it is valid JSX and successfully transpiles. Make sure you dont change any of the content- you only need to close tags where they are needed.
+
+
+CHALLENGE SOLUTION CODE + Explanation
+
+const JSX = (
+  <div>
+    <h2>Welcome to React!</h2> <br />
+    <p>Be sure to close all tags!</p>
+    <hr />
+  </div>
+);
+
+  - In this challenge, the two errors to be fixed are the line-break tag (<br />) after the <h2> and the  horizontal-row tag ( <hr />) after the paragraph.
+
+  - These two tags are self-closing tags native to HTML because neither of these tags contain any content.

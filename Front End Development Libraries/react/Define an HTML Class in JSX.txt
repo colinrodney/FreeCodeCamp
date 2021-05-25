@@ -1,0 +1,38 @@
+Define an HTML Class in JSX
+
+> How does JSX differ from HTML?
+  -JSX and HTML seem to be the exact same thing. JSX and HTML are very similar but are not the same.
+
+> Defining classes in JSX vs HTML
+  - One key difference between JSX and HTML is how class names (classes) are defiend. 
+
+  - IN JSX we cannot use the word 'class' to define an HTML class because the word 'class' is a reserved word in JavaScript. To declare an HTML class in JSX we use the word 'className'.
+
+  -Naming conventions for all HTML attributes and event references in JSX are to be writted in camelCase. Consider the following examples:
+
+    - a click event in JavaScript or HTML is written as 'onclick'.
+
+    - a click event in JSX should be written as 'onClick'.
+
+    - a change event in HTML or JavaScript is written as 'onchange'.
+
+    - a change event in JSX should be written as 'onChange'.
+
+CODE CHALLENGE:
+
+- Goal: Apply a class of myDiv to the div provided in the JSX code.
+
+
+CHALLENGE SOLUTION CODE + Explanation:
+
+const JSX = (
+  <div className = "myDiv">
+    <h1>Ass a class to this div</h1>
+  </div>
+);
+
+  - To declare an HTML class attribute in JSX we cannot use the word 'class' as it is a JavaScript reserved word. Instead we have to do two things:
+
+    1. Use the word 'className' to declare the HTML class attribute and...
+
+    2. The JSX naming convetions for ALL HTML attributes and event references MUST be written in camelCase such that react can distinguish JSX from Javascript syntax. (???)
